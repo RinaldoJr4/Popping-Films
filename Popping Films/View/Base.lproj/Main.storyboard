@@ -70,7 +70,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YuH-kw-CQi">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="YuH-kw-CQi" customClass="PopularCollectionViewCell" customModule="Popping_Films" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gfa-U6-i5C">
@@ -97,6 +97,10 @@
                                                                         <constraint firstAttribute="bottom" secondItem="OPN-zf-Tpf" secondAttribute="bottom" constant="8" id="h7m-zE-oqB"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="image" destination="rGL-mg-pZP" id="4fE-dH-Sts"/>
+                                                                    <outlet property="titleLabel" destination="OPN-zf-Tpf" id="aPF-wd-eVC"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -149,7 +153,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UrN-mQ-hZo">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="nowPlayingCell" id="UrN-mQ-hZo" customClass="NowPlayingCollectionViewCell" customModule="Popping_Films" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zAW-AQ-tsP">
@@ -195,6 +199,11 @@
                                                                         <constraint firstItem="drB-MI-QQe" firstAttribute="leading" secondItem="zAW-AQ-tsP" secondAttribute="leading" id="v6P-js-LWl"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="Ol2-UK-7kq" id="k0W-kJ-p4J"/>
+                                                                    <outlet property="image" destination="drB-MI-QQe" id="zNg-58-2jJ"/>
+                                                                    <outlet property="titleLabel" destination="w9b-QI-vWE" id="scM-Ro-HdZ"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -247,7 +256,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zhy-Jk-QJq">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCell" id="Zhy-Jk-QJq" customClass="UpcomingCollectionViewCell" customModule="Popping_Films" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="9.5" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uU2-Rh-fyg">
@@ -334,6 +343,7 @@
                     <navigationItem key="navigationItem" title="Featured" id="weo-bu-zQp"/>
                     <size key="freeformSize" width="414" height="1341"/>
                     <connections>
+                        <outlet property="nowPlayingCollectionView" destination="OYA-6i-h3Y" id="2eM-RH-FC5"/>
                         <outlet property="popularCollectionView" destination="pWP-HQ-Pe0" id="tb5-qG-cRj"/>
                     </connections>
                 </viewController>
