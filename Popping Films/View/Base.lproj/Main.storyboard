@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="Edz-8q-bLv">
             <objects>
-                <viewController title="Featured" id="qYS-6u-sW5" sceneMemberID="viewController">
+                <viewController title="Featured" id="qYS-6u-sW5" customClass="FeaturedViewController" customModule="Popping_Films" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6g-Sv-bg6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1341"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
                                                                                                     <nil key="textColor"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
-                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kw-vv-AM6">
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kw-vv-AM6">
                                                                                                     <rect key="frame" x="112" y="0.0" width="72" height="23"/>
                                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                                     <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,6 +333,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Featured" id="weo-bu-zQp"/>
                     <size key="freeformSize" width="414" height="1341"/>
+                    <connections>
+                        <outlet property="popularCollectionView" destination="pWP-HQ-Pe0" id="tb5-qG-cRj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adf-li-uhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

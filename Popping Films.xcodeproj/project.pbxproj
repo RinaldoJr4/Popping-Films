@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D308D643287C980600B38907 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D642287C980600B38907 /* PopularCollectionViewCell.swift */; };
+		D308D645287C985600B38907 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D644287C985600B38907 /* NowPlayingCollectionViewCell.swift */; };
+		D308D647287C986E00B38907 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D646287C986E00B38907 /* UpcomingCollectionViewCell.swift */; };
 		D39F2F8C2874AF41005957D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F2F8B2874AF41005957D8 /* AppDelegate.swift */; };
 		D39F2F8E2874AF41005957D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F2F8D2874AF41005957D8 /* SceneDelegate.swift */; };
-		D39F2F902874AF41005957D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F2F8F2874AF41005957D8 /* ViewController.swift */; };
+		D39F2F902874AF41005957D8 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F2F8F2874AF41005957D8 /* FeaturedViewController.swift */; };
 		D39F2F932874AF41005957D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39F2F912874AF41005957D8 /* Main.storyboard */; };
 		D39F2F952874AF43005957D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39F2F942874AF43005957D8 /* Assets.xcassets */; };
 		D39F2F982874AF43005957D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39F2F962874AF43005957D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D308D642287C980600B38907 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		D308D644287C985600B38907 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D308D646287C986E00B38907 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D39F2F882874AF41005957D8 /* Popping Films.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Popping Films.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39F2F8B2874AF41005957D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39F2F8D2874AF41005957D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D39F2F8F2874AF41005957D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D39F2F8F2874AF41005957D8 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		D39F2F922874AF41005957D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D39F2F942874AF43005957D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D39F2F972874AF43005957D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D308D648287C992600B38907 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D39F2F8F2874AF41005957D8 /* FeaturedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D308D649287C9A1500B38907 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D39F2F912874AF41005957D8 /* Main.storyboard */,
+				D39F2F962874AF43005957D8 /* LaunchScreen.storyboard */,
+				D308D642287C980600B38907 /* PopularCollectionViewCell.swift */,
+				D308D644287C985600B38907 /* NowPlayingCollectionViewCell.swift */,
+				D308D646287C986E00B38907 /* UpcomingCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D308D64A287C9E2800B38907 /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D39F2F942874AF43005957D8 /* Assets.xcassets */,
+				D39F2F992874AF43005957D8 /* Info.plist */,
+			);
+			name = SuportingFiles;
+			sourceTree = "<group>";
+		};
 		D39F2F7F2874AF41005957D8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +93,9 @@
 			children = (
 				D39F2F8B2874AF41005957D8 /* AppDelegate.swift */,
 				D39F2F8D2874AF41005957D8 /* SceneDelegate.swift */,
-				D39F2F8F2874AF41005957D8 /* ViewController.swift */,
-				D39F2F912874AF41005957D8 /* Main.storyboard */,
-				D39F2F942874AF43005957D8 /* Assets.xcassets */,
-				D39F2F962874AF43005957D8 /* LaunchScreen.storyboard */,
-				D39F2F992874AF43005957D8 /* Info.plist */,
+				D308D648287C992600B38907 /* Controllers */,
+				D308D649287C9A1500B38907 /* View */,
+				D308D64A287C9E2800B38907 /* SuportingFiles */,
 			);
 			path = "Popping Films";
 			sourceTree = "<group>";
@@ -138,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39F2F902874AF41005957D8 /* ViewController.swift in Sources */,
+				D308D647287C986E00B38907 /* UpcomingCollectionViewCell.swift in Sources */,
+				D308D645287C985600B38907 /* NowPlayingCollectionViewCell.swift in Sources */,
+				D308D643287C980600B38907 /* PopularCollectionViewCell.swift in Sources */,
+				D39F2F902874AF41005957D8 /* FeaturedViewController.swift in Sources */,
 				D39F2F8C2874AF41005957D8 /* AppDelegate.swift in Sources */,
 				D39F2F8E2874AF41005957D8 /* SceneDelegate.swift in Sources */,
 			);
