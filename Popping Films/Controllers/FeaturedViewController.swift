@@ -9,6 +9,11 @@ import UIKit
 
 class FeaturedViewController: UIViewController, UICollectionViewDataSource {
     
+//    let movieQuaquer = Movie(title: "HarryPoter", poster: "poster_harry.jpg", backdrop: "backdrop_harry.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho...", genres: ["Fantasia","Ação"])
+//    não se usa prq eh muito grotesco e grande
+    
+    let movies = [Movie()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
