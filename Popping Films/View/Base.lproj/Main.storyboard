@@ -59,7 +59,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pWP-HQ-Pe0">
                                                         <rect key="frame" x="0.0" y="57" width="414" height="140"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="140" id="o7Z-My-eWN"/>
                                                         </constraints>
@@ -78,12 +78,15 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rGL-mg-pZP">
-                                                                            <rect key="frame" x="8" y="8" width="184" height="100.5"/>
+                                                                            <rect key="frame" x="8" y="8" width="184" height="100"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="rGL-mg-pZP" secondAttribute="height" multiplier="46:25" id="ZP7-l4-7Sz"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPN-zf-Tpf">
-                                                                            <rect key="frame" x="8" y="112.5" width="184" height="19.5"/>
+                                                                            <rect key="frame" x="8" y="112" width="184" height="20"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -98,7 +101,7 @@
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
                                                                 <connections>
-                                                                    <outlet property="image" destination="rGL-mg-pZP" id="4fE-dH-Sts"/>
+                                                                    <outlet property="imageView" destination="rGL-mg-pZP" id="4fE-dH-Sts"/>
                                                                     <outlet property="titleLabel" destination="OPN-zf-Tpf" id="aPF-wd-eVC"/>
                                                                 </connections>
                                                             </collectionViewCell>
@@ -142,7 +145,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OYA-6i-h3Y">
                                                         <rect key="frame" x="0.0" y="58" width="414" height="342"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="342" id="sob-0i-knp"/>
                                                         </constraints>
@@ -173,7 +176,7 @@
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9b-QI-vWE">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="175" height="19.5"/>
                                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                                    <nil key="textColor"/>
+                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="N83-My-y5J">
@@ -201,7 +204,7 @@
                                                                 </collectionViewCellContentView>
                                                                 <connections>
                                                                     <outlet property="dateLabel" destination="Ol2-UK-7kq" id="k0W-kJ-p4J"/>
-                                                                    <outlet property="image" destination="drB-MI-QQe" id="zNg-58-2jJ"/>
+                                                                    <outlet property="imageView" destination="drB-MI-QQe" id="zNg-58-2jJ"/>
                                                                     <outlet property="titleLabel" destination="w9b-QI-vWE" id="scM-Ro-HdZ"/>
                                                                 </connections>
                                                             </collectionViewCell>
@@ -245,7 +248,7 @@
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6hn-Gp-rw1">
                                                         <rect key="frame" x="0.0" y="58" width="414" height="318"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" systemColor="systemFillColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="318" id="QWf-3W-7H2"/>
                                                         </constraints>
@@ -282,7 +285,7 @@
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNp-Pd-fBb">
                                                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="23"/>
                                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                                    <nil key="textColor"/>
+                                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kw-vv-AM6">
@@ -294,7 +297,7 @@
                                                                                             </subviews>
                                                                                         </stackView>
                                                                                     </subviews>
-                                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
                                                                                     <constraints>
                                                                                         <constraint firstItem="VzX-GM-inq" firstAttribute="top" secondItem="vgi-Yk-Zdw" secondAttribute="top" id="GwR-cd-smg"/>
                                                                                         <constraint firstItem="VzX-GM-inq" firstAttribute="leading" secondItem="vgi-Yk-Zdw" secondAttribute="leading" id="O4v-nN-WBa"/>
@@ -312,6 +315,11 @@
                                                                         <constraint firstItem="M3X-Yv-jnG" firstAttribute="top" secondItem="uU2-Rh-fyg" secondAttribute="top" constant="8" id="wAJ-7k-ns2"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="9Kw-vv-AM6" id="pEW-gW-oxe"/>
+                                                                    <outlet property="imageView" destination="djk-9X-1Jl" id="HwG-7L-0Hi"/>
+                                                                    <outlet property="titleLabel" destination="XNp-Pd-fBb" id="sog-aC-TLy"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -332,7 +340,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xOS-gX-idd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xOS-gX-idd" firstAttribute="bottom" secondItem="eDy-qK-s8M" secondAttribute="bottom" id="B8J-Wb-DUh"/>
                             <constraint firstItem="xOS-gX-idd" firstAttribute="top" secondItem="eDy-qK-s8M" secondAttribute="top" id="TNw-5E-noe"/>
@@ -345,6 +353,7 @@
                     <connections>
                         <outlet property="nowPlayingCollectionView" destination="OYA-6i-h3Y" id="2eM-RH-FC5"/>
                         <outlet property="popularCollectionView" destination="pWP-HQ-Pe0" id="tb5-qG-cRj"/>
+                        <outlet property="upcomingCollectionView" destination="6hn-Gp-rw1" id="AJU-Zg-eHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adf-li-uhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -378,6 +387,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hhF-bh-gt1">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -392,8 +404,8 @@
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>
         <image name="film.fill" catalog="system" width="128" height="93"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

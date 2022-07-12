@@ -1,7 +1,7 @@
 // swiftlint:disable line_length function_body_length
 import Foundation
 
-extension Movie {
+extension Movie { // <-- se liga na extension
 
     static func popularMovies() -> [Movie] {
         return [
