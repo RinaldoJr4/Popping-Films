@@ -12,4 +12,6 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
+    static let cellIdentifier = "nowPlayingCell"
+
 }

@@ -11,4 +11,7 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
+    
+    static let cellIdentifier = "upcomingCell"
+
 }
