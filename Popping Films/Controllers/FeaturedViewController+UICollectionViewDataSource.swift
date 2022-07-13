@@ -22,7 +22,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
             cell.titleLabel.text = nowPlayingMovies[indexPath.item].title // <- pesquisar direferença entre row e item
             cell.imageView.image = UIImage(named: nowPlayingMovies[indexPath.row].poster)
-            cell.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
+            cell.dateLabel.text = "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))"
             return cell
         }
         return NowPlayingCollectionViewCell()
@@ -31,7 +31,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
             cell.titleLabel.text = upcomingMovies[indexPath.row].title
-            cell.dateLabel.text = upcomingMovies[indexPath.item].releaseDate
+            cell.dateLabel.text = String(upcomingMovies[indexPath.item].releaseDate.prefix(4))
             cell.imageView.image = UIImage(named: nowPlayingMovies[indexPath.row].poster)
             return cell
         }
