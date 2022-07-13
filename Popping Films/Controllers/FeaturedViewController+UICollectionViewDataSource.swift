@@ -31,8 +31,10 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
             cell.titleLabel.text = upcomingMovies[indexPath.row].title
+           /* let dateFormatter = DateFormatter()       <- Aprende sobre isso, mané
+            dateFormatter.dateFormat = "MM-dd-yyyy" */
             cell.dateLabel.text = String(upcomingMovies[indexPath.item].releaseDate.prefix(4))
-            cell.imageView.image = UIImage(named: nowPlayingMovies[indexPath.row].poster)
+            cell.imageView.image = UIImage(named: upcomingMovies[indexPath.row].poster)
             return cell
         }
         return UpcomingCollectionViewCell()
@@ -48,6 +50,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         } else {
         return UICollectionViewCell()
         }
+        
         
         /* let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell
         cell?.titleLabel.text = popularMovies[indexPath.item].title // <- pesquisar direferença entre row e item

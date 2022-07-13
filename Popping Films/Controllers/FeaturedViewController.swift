@@ -29,8 +29,19 @@ class FeaturedViewController: UIViewController {
         nowPlayingCollectionView.dataSource = self
         upcomingCollectionView.dataSource = self
         
+        popularCollectionView.delegate = self
+        nowPlayingCollectionView.delegate = self
+        upcomingCollectionView.delegate = self
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsViewController{
+            let movie = sender as? Movie
+            destination.movie = movie
+        }
+    }
+    
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView!
     @IBOutlet var upcomingCollectionView: UICollectionView!
