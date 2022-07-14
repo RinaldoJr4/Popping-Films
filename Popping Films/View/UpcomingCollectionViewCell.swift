@@ -14,4 +14,9 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "upcomingCell"
 
+    func setup(title:String, image:UIImage, dateLabel:String){
+        titleLabel.text = title
+        imageView.image = image
+        self.dateLabel.text = dateLabel
+    }
 }

@@ -22,6 +22,10 @@ class FeaturedViewController: UIViewController {
     let nowPlayingMovies = Movie.nowPlayingMovies()
     let upcomingMovies = Movie.upcomingMovies()
     
+    @IBOutlet var popularCollectionView: UICollectionView!
+    @IBOutlet var nowPlayingCollectionView: UICollectionView!
+    @IBOutlet var upcomingCollectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -42,20 +46,7 @@ class FeaturedViewController: UIViewController {
         }
     }
     
-    @IBOutlet var popularCollectionView: UICollectionView!
-    @IBOutlet var nowPlayingCollectionView: UICollectionView!
-    @IBOutlet var upcomingCollectionView: UICollectionView!
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == popularCollectionView {
-            return popularMovies.count
-        } else if collectionView == nowPlayingCollectionView {
-            return nowPlayingMovies.count
-        } else if collectionView == upcomingCollectionView {
-            return upcomingMovies.count
-        } else {
-            return 0
-        }
-    }
 }
+
 
