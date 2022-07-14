@@ -126,11 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				D34A4D7B287DEDFD0048015E /* Model */,
-				D39F2F8B2874AF41005957D8 /* AppDelegate.swift */,
-				D39F2F8D2874AF41005957D8 /* SceneDelegate.swift */,
 				D308D648287C992600B38907 /* Controllers */,
 				D308D649287C9A1500B38907 /* View */,
 				D308D64A287C9E2800B38907 /* SuportingFiles */,
+				D39F2F8B2874AF41005957D8 /* AppDelegate.swift */,
+				D39F2F8D2874AF41005957D8 /* SceneDelegate.swift */,
 			);
 			path = "Popping Films";
 			sourceTree = "<group>";
