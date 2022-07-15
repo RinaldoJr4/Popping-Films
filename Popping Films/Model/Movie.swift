@@ -16,5 +16,5 @@ struct Movie: Codable {
     let voteAverage: Float // <- Esse eh Float
     let releaseDate: String
     let overview: String
-    let genresIds: [String]? // <- Observa esse tipo de declaração aqui
+    let genres: [String]? // <- Observa esse tipo de declaração aqui
 }

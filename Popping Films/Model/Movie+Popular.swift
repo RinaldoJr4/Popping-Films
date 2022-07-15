@@ -12,7 +12,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.5,
         releaseDate: "2022-05-04",
         overview: "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
-        genresIds: [
+        genres: [
             "Fantasy",
             "Action",
             "Adventure"
@@ -25,7 +25,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6.8,
         releaseDate: "2022-04-06",
         overview: "Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.",
-        genresIds: [
+        genres: [
             "Fantasy",
             "Adventure",
             "Action"
@@ -38,7 +38,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.4,
         releaseDate: "2022-02-17",
         overview: "An army ranger and his dog embark on a road trip along the Pacific Coast Highway to attend a friend's funeral.",
-        genresIds: [
+        genres: [
             "Drama",
             "Comedy"
         ]
@@ -50,7 +50,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.7,
         releaseDate: "2022-03-30",
         overview: "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Family",
@@ -64,7 +64,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6.5,
         releaseDate: "2022-03-30",
         overview: "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
-        genresIds: [
+        genres: [
             "Action",
             "Science Fiction",
             "Fantasy"
@@ -77,7 +77,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6.8,
         releaseDate: "2022-03-24",
         overview: "A reclusive romance novelist was sure nothing could be worse than getting stuck on a book tour with her cover model until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Comedy"
@@ -90,7 +90,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 8.1,
         releaseDate: "2021-12-15",
         overview: "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Science Fiction"
@@ -103,7 +103,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.3,
         releaseDate: "2022-04-28",
         overview: "Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller",
             "Crime"
@@ -116,7 +116,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 5.9,
         releaseDate: "2022-06-16",
         overview: "Over the course of one fateful day, a corrupt businessman and his socialite wife race to save their daughter from a notorious crime lord.",
-        genresIds: [
+        genres: [
             "Thriller",
             "Crime",
             "Drama"
@@ -129,7 +129,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6.6,
         releaseDate: "2022-06-15",
         overview: "Rafa's hooked on the pure, fiery feelings he gets from speed racing, but when his kid's mom gets mixed up with drug dealers, he burns rubber to save her.",
-        genresIds: [
+        genres: [
             "Action",
             "Crime",
             "Thriller"
@@ -142,7 +142,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 5.6,
         releaseDate: "2022-06-15",
         overview: "A prisoner in a state-of-the-art penitentiary begins to question the purpose of the emotion-controlling drugs he's testing for a pharmaceutical genius.",
-        genresIds: [
+        genres: [
             "Science Fiction",
             "Thriller"
         ]
@@ -154,7 +154,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6.7,
         releaseDate: "2022-06-01",
         overview: "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Science Fiction"
@@ -167,7 +167,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.2,
         releaseDate: "2022-06-18",
         overview: "Finney Shaw, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
-        genresIds: [
+        genres: [
             "Horror",
             "Thriller"
         ]
@@ -179,7 +179,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7,
         releaseDate: "2022-05-13",
         overview: "A group of friends enjoying a weekend steal a couple of jetskis racing them out to sea, ending up in a horrific head-on collision. They struggle to find a way home with a badly injured friend while from the waters below predators lurk.",
-        genresIds: [
+        genres: [
             "Horror",
             "Thriller",
             "Action"
@@ -192,7 +192,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 5.9,
         releaseDate: "2022-03-17",
         overview: "An ex-marine is hired by a defense contractor to travel to Panama to complete an arms deal. In the process he becomes involved with the U.S. invasion of Panama, and learns an important lesson about the true nature of political power.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller"
         ]
@@ -204,7 +204,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.3,
         releaseDate: "2022-04-07",
         overview: "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Fantasy"
@@ -217,7 +217,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.1,
         releaseDate: "2022-02-10",
         overview: "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure"
         ]
@@ -229,7 +229,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 6,
         releaseDate: "2021-09-12",
         overview: "A woman desperately races to save her child after police place her hometown on lockdown due to an active shooter incident.",
-        genresIds: [
+        genres: [
             "Thriller"
         ]
     ),
@@ -240,7 +240,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.9,
         releaseDate: "2022-06-03",
         overview: "After discovering a once-in-a-lifetime player with a rocky past abroad, a down on his luck basketball scout takes it upon himself to bring the phenom to the States without his team's approval. Against the odds, they have one final shot to prove they have what it takes to make it in the NBA.",
-        genresIds: [
+        genres: [
             "Drama",
             "Comedy"
         ]
@@ -252,7 +252,7 @@ extension Movie { // <-- se liga na extension
         voteAverage: 7.5,
         releaseDate: "2022-03-10",
         overview: "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
-        genresIds: [
+        genres: [
             "Animation",
             "Family",
             "Comedy",

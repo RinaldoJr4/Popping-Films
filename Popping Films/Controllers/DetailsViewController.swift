@@ -26,16 +26,26 @@ class DetailsViewController: UIViewController {
         guard let movie = movie else {
             return
         }
+        
         self.title = movie.title
-        backdropImage.image = UIImage(named: movie.backdropPath)
-        posterImage.image = UIImage(named: movie.posterPath)
+        
+//        ESTUDAR ESSA PARTE COM MUITO DETALHE
+        Task {
+        let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+            let image = UIImage(data: imageData) ?? UIImage()
+            self.backdropImage.image = image // UIImage(named: movie.backdropPath)
+        }
+        Task {
+        let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+            let image = UIImage(data: imageData) ?? UIImage()
+            self.posterImage.image = image // UIImage(named: movie.posterPath)
+        }
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
+//     
         
-
     }
-    
 
     /*
     // MARK: - Navigation

@@ -12,7 +12,7 @@ extension Movie {
         voteAverage: 7.5,
         releaseDate: "2022-05-04",
         overview: "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
-        genresIds: [
+        genres: [
             "Fantasy",
             "Action",
             "Adventure"
@@ -25,7 +25,7 @@ extension Movie {
         voteAverage: 7.4,
         releaseDate: "2022-02-17",
         overview: "An army ranger and his dog embark on a road trip along the Pacific Coast Highway to attend a friend's funeral.",
-        genresIds: [
+        genres: [
             "Drama",
             "Comedy"
         ]
@@ -37,7 +37,7 @@ extension Movie {
         voteAverage: 6.5,
         releaseDate: "2022-03-30",
         overview: "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
-        genresIds: [
+        genres: [
             "Action",
             "Science Fiction",
             "Fantasy"
@@ -50,7 +50,7 @@ extension Movie {
         voteAverage: 6.8,
         releaseDate: "2022-03-24",
         overview: "A reclusive romance novelist was sure nothing could be worse than getting stuck on a book tour with her cover model until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Comedy"
@@ -63,7 +63,7 @@ extension Movie {
         voteAverage: 7.3,
         releaseDate: "2022-04-28",
         overview: "Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller",
             "Crime"
@@ -76,7 +76,7 @@ extension Movie {
         voteAverage: 5.9,
         releaseDate: "2022-06-16",
         overview: "Over the course of one fateful day, a corrupt businessman and his socialite wife race to save their daughter from a notorious crime lord.",
-        genresIds: [
+        genres: [
             "Thriller",
             "Crime",
             "Drama"
@@ -89,7 +89,7 @@ extension Movie {
         voteAverage: 6.7,
         releaseDate: "2022-06-01",
         overview: "Four years after Isla Nublar was destroyed, dinosaurs now live—and hunt—alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history’s most fearsome creatures.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Science Fiction"
@@ -102,7 +102,7 @@ extension Movie {
         voteAverage: 7.2,
         releaseDate: "2022-06-18",
         overview: "Finney Shaw, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
-        genresIds: [
+        genres: [
             "Horror",
             "Thriller"
         ]
@@ -114,7 +114,7 @@ extension Movie {
         voteAverage: 5.9,
         releaseDate: "2022-03-17",
         overview: "An ex-marine is hired by a defense contractor to travel to Panama to complete an arms deal. In the process he becomes involved with the U.S. invasion of Panama, and learns an important lesson about the true nature of political power.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller"
         ]
@@ -126,7 +126,7 @@ extension Movie {
         voteAverage: 7.3,
         releaseDate: "2022-04-07",
         overview: "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure",
             "Fantasy"
@@ -139,7 +139,7 @@ extension Movie {
         voteAverage: 7.1,
         releaseDate: "2022-02-10",
         overview: "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.",
-        genresIds: [
+        genres: [
             "Action",
             "Adventure"
         ]
@@ -151,7 +151,7 @@ extension Movie {
         voteAverage: 6,
         releaseDate: "2021-09-12",
         overview: "A woman desperately races to save her child after police place her hometown on lockdown due to an active shooter incident.",
-        genresIds: [
+        genres: [
             "Thriller"
         ]
     ),
@@ -162,7 +162,7 @@ extension Movie {
         voteAverage: 7.9,
         releaseDate: "2022-06-03",
         overview: "After discovering a once-in-a-lifetime player with a rocky past abroad, a down on his luck basketball scout takes it upon himself to bring the phenom to the States without his team's approval. Against the odds, they have one final shot to prove they have what it takes to make it in the NBA.",
-        genresIds: [
+        genres: [
             "Drama",
             "Comedy"
         ]
@@ -174,7 +174,7 @@ extension Movie {
         voteAverage: 7.1,
         releaseDate: "2022-04-20",
         overview: "Creatively unfulfilled and facing financial ruin, Nick Cage must accept a $1 million offer to attend the birthday of a dangerous superfan. Things take a wildly unexpected turn when Cage is recruited by a CIA operative and forced to live up to his own legend, channeling his most iconic and beloved on-screen characters in order to save himself and his loved ones.",
-        genresIds: [
+        genres: [
             "Action",
             "Comedy",
             "Crime"
@@ -187,7 +187,7 @@ extension Movie {
         voteAverage: 6.3,
         releaseDate: "2022-03-04",
         overview: "A disgraced parole officer is indebted to a local gang leader and forced to pull off a series of dangerous drug heists within twelve hours in order to pay the $2 million dollars he owes, rescue his kidnapped pregnant wife, and settle a score with the city's corrupt police chief, who is working with the gang leader and double-crossed him years ago.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller",
             "Crime"
@@ -200,7 +200,7 @@ extension Movie {
         voteAverage: 6.3,
         releaseDate: "2022-05-26",
         overview: "A U.S. Army Captain uses her years of tactical training to save humanity from sixteen nuclear missiles launched at the U.S. as a violent attack threatens her remote missile interceptor station.",
-        genresIds: [
+        genres: [
             "Action",
             "Thriller",
             "Adventure"
@@ -213,7 +213,7 @@ extension Movie {
         voteAverage: 8.4,
         releaseDate: "2022-06-11",
         overview: "The Red Ribbon Army, an evil organization that was once destroyed by Goku in the past, has been reformed by a group of people who have created new and mightier Androids, Gamma 1 and Gamma 2, and seek vengeance against Goku and his family.",
-        genresIds: [
+        genres: [
             "Animation",
             "Science Fiction",
             "Action"
@@ -226,7 +226,7 @@ extension Movie {
         voteAverage: 6.3,
         releaseDate: "2022-01-07",
         overview: "When blind former skier Sophie cat-sits in a secluded mansion, three thieves invade for the hidden safe. Sophie's only defense is army veteran Kelly, who she meets on the See For Me app. Kelly helps Sophie defend herself against the invaders and survive.",
-        genresIds: [
+        genres: [
             "Thriller",
             "Drama",
             "Crime",
@@ -241,7 +241,7 @@ extension Movie {
         voteAverage: 7.1,
         releaseDate: "2022-06-15",
         overview: "Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
-        genresIds: [
+        genres: [
             "Animation",
             "Science Fiction",
             "Adventure",
@@ -256,7 +256,7 @@ extension Movie {
         voteAverage: 8.4,
         releaseDate: "2022-05-24",
         overview: "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-        genresIds: [
+        genres: [
             "Action",
             "Drama"
         ]

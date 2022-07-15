@@ -16,9 +16,9 @@ class FeaturedViewController: UIViewController {
     
     // Inicializando array de strings vazio
     // var doces: [String]= []
-    // doces.append("Brigadeiro")
+    // doces.append("Brigadeiro") <- add "Brigadeiro no fim da lista de Strings"
     
-    let popularMovies = Movie.popularMovies()
+    var popularMovies: [Movie] = [] // var popularMovies = Movie.popularMovies()
     let nowPlayingMovies = Movie.nowPlayingMovies()
     let upcomingMovies = Movie.upcomingMovies()
     
@@ -37,6 +37,10 @@ class FeaturedViewController: UIViewController {
         nowPlayingCollectionView.delegate = self
         upcomingCollectionView.delegate = self
         
+        Task {
+            self.popularMovies = await Movie.popularMoviesAPI()
+            self.popularCollectionView.reloadData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
