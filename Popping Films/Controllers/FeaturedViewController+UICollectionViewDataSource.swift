@@ -13,7 +13,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
             
             cell.setup(title: popularMovies[indexPath.item].title,
-                       image: UIImage(named: popularMovies[indexPath.row].backdrop) ?? UIImage())
+                       image: UIImage(named: popularMovies[indexPath.row].backdropPath) ?? UIImage())
 
             return cell
         }
@@ -24,7 +24,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
             
             cell.setup(title: nowPlayingMovies[indexPath.item].title,
-                       image: UIImage(named: nowPlayingMovies[indexPath.row].poster) ?? UIImage(),
+                       image: UIImage(named: nowPlayingMovies[indexPath.row].posterPath) ?? UIImage(),
                        dateLabel: "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))")
             
             return cell
@@ -36,7 +36,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
             
             cell.setup(title: upcomingMovies[indexPath.row].title,
-                       image: UIImage(named: upcomingMovies[indexPath.row].poster) ?? UIImage(),
+                       image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage(),
                        dateLabel: String(upcomingMovies[indexPath.item].releaseDate.prefix(4)))
             
             return cell
