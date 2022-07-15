@@ -9,7 +9,7 @@ import Foundation
 
 // Struct de definição do que vai ser mostrado, para facilitar a obtenção de dados
 
-struct Movie {
+struct Movie: Codable {
     let title: String
     let poster: String
     let backdrop: String

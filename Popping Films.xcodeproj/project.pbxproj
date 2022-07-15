@@ -10,6 +10,8 @@
 		D308D643287C980600B38907 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D642287C980600B38907 /* PopularCollectionViewCell.swift */; };
 		D308D645287C985600B38907 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D644287C985600B38907 /* NowPlayingCollectionViewCell.swift */; };
 		D308D647287C986E00B38907 /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308D646287C986E00B38907 /* UpcomingCollectionViewCell.swift */; };
+		D31140F42881E7DF000A9FBE /* TMDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D31140F32881E7DF000A9FBE /* TMDB-Info.plist */; };
+		D31140F82881ECD9000A9FBE /* Movie+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31140F72881ECD9000A9FBE /* Movie+API.swift */; };
 		D34A4D7D287DEE4C0048015E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A4D7C287DEE4C0048015E /* Movie.swift */; };
 		D34A4D83287DF54C0048015E /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A4D7E287DF54C0048015E /* Movie+NowPlaying.swift */; };
 		D34A4D84287DF54C0048015E /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34A4D7F287DF54C0048015E /* Movie+TrendingToday.swift */; };
@@ -31,6 +33,8 @@
 		D308D642287C980600B38907 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		D308D644287C985600B38907 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		D308D646287C986E00B38907 /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D31140F32881E7DF000A9FBE /* TMDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMDB-Info.plist"; sourceTree = "<group>"; };
+		D31140F72881ECD9000A9FBE /* Movie+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+API.swift"; path = "../../../../../Downloads/Movie+API.swift"; sourceTree = "<group>"; };
 		D34A4D7C287DEE4C0048015E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D34A4D7E287DF54C0048015E /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
 		D34A4D7F287DF54C0048015E /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			children = (
 				D39F2F942874AF43005957D8 /* Assets.xcassets */,
 				D39F2F992874AF43005957D8 /* Info.plist */,
+				D31140F32881E7DF000A9FBE /* TMDB-Info.plist */,
 			);
 			name = SuportingFiles;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				D34A4D81287DF54C0048015E /* Movie+TrendingThisWeek.swift */,
 				D34A4D82287DF54C0048015E /* Movie+Upcoming.swift */,
 				D34A4D7F287DF54C0048015E /* Movie+TrendingToday.swift */,
+				D31140F72881ECD9000A9FBE /* Movie+API.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39F2F982874AF43005957D8 /* LaunchScreen.storyboard in Resources */,
+				D31140F42881E7DF000A9FBE /* TMDB-Info.plist in Resources */,
 				D39F2F952874AF43005957D8 /* Assets.xcassets in Resources */,
 				D39F2F932874AF41005957D8 /* Main.storyboard in Resources */,
 			);
@@ -221,6 +228,7 @@
 				D352A372287F3F0900B801A8 /* DetailsViewController.swift in Sources */,
 				D39F2F8C2874AF41005957D8 /* AppDelegate.swift in Sources */,
 				D39F2F8E2874AF41005957D8 /* SceneDelegate.swift in Sources */,
+				D31140F82881ECD9000A9FBE /* Movie+API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
