@@ -41,9 +41,17 @@ extension FeaturedViewController: UICollectionViewDataSource {
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
             
-            cell.setup(title: upcomingMovies[indexPath.row].title,
-                       image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage(),
-                       dateLabel: String(upcomingMovies[indexPath.item].releaseDate.prefix(4)))
+            // Formatando data pra upcoming
+            
+            let dateFormatterGet = DateFormatter()
+            dateFormatterGet.dateFormat = "yyyy-MM-dd"
+
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM dd"
+
+            cell.setup(title: upcomingMovies[indexPath.row].title, image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage(), dateLabel: dateFormatterGet.date(from: String(upcomingMovies[indexPath.item].releaseDate))?.formatted(.dateTime
+                .day(.defaultDigits)
+                .month(.abbreviated)) ?? "error") // <- esse final vai explodir a minha cabeça
             
             return cell
         }
@@ -80,3 +88,4 @@ extension FeaturedViewController: UICollectionViewDataSource {
         }
     }
 }
+
