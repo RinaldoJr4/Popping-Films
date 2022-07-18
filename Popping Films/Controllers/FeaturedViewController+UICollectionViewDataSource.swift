@@ -17,7 +17,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
             
             let movie = popularMovies[indexPath.item]
             Task {
-            let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
                 let image = UIImage(data: imageData) ?? UIImage()
                 cell.setup(title: movie.title, image: image)
             }
@@ -28,6 +28,17 @@ extension FeaturedViewController: UICollectionViewDataSource {
     
     fileprivate func makeNowPlayingCell(_ collectionView: UICollectionView, _ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
+            
+            cell.setup(title: nowPlayingMovies[indexPath.item].title,
+                       image: UIImage(), dateLabel: <#T##String#>) // image: UIImage(named: popularMovies[indexPath.row].posterPath) ?? UIImage()
+            
+            let movie = popularMovies[indexPath.item]
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let image = UIImage(data: imageData) ?? UIImage()
+                cell.setup(title: movie.title, image: image)
+            }
+            return cell
             
             cell.setup(title: nowPlayingMovies[indexPath.item].title,
                        image: UIImage(named: nowPlayingMovies[indexPath.row].posterPath) ?? UIImage(),
@@ -46,8 +57,9 @@ extension FeaturedViewController: UICollectionViewDataSource {
             let dateFormatterGet = DateFormatter()
             dateFormatterGet.dateFormat = "yyyy-MM-dd"
 
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM dd"
+/*          let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMM dd"    <- Desnecessário
+*/
 
             cell.setup(title: upcomingMovies[indexPath.row].title, image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage(), dateLabel: dateFormatterGet.date(from: String(upcomingMovies[indexPath.item].releaseDate))?.formatted(.dateTime
                 .day(.defaultDigits)

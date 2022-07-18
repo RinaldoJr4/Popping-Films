@@ -19,8 +19,8 @@ class FeaturedViewController: UIViewController {
     // doces.append("Brigadeiro") <- add "Brigadeiro no fim da lista de Strings"
     
     var popularMovies: [Movie] = [] // var popularMovies = Movie.popularMovies()
-    let nowPlayingMovies = Movie.nowPlayingMovies()
-    let upcomingMovies = Movie.upcomingMovies()
+    var nowPlayingMovies: [Movie] = []
+    var upcomingMovies: [Movie] = []
     
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView!
@@ -39,7 +39,11 @@ class FeaturedViewController: UIViewController {
         
         Task {
             self.popularMovies = await Movie.popularMoviesAPI()
+            self.nowPlayingMovies = await Movie.nowPlayingMoviesAPI()
+            self.upcomingMovies = await Movie.upcomingMoviesAPI()
             self.popularCollectionView.reloadData()
+            self.nowPlayingCollectionView.reloadData()
+            self.upcomingCollectionView.reloadData()
         }
     }
     

@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    
     @IBOutlet var backdropImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     
@@ -29,32 +29,34 @@ class DetailsViewController: UIViewController {
         
         self.title = movie.title
         
-//        ESTUDAR ESSA PARTE COM MUITO DETALHE
+        //        ESTUDAR ESSA PARTE COM MUITO DETALHE
+        
         Task {
-        let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+            let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
             let image = UIImage(data: imageData) ?? UIImage()
             self.backdropImage.image = image // UIImage(named: movie.backdropPath)
         }
         Task {
-        let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+            let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
             let image = UIImage(data: imageData) ?? UIImage()
             self.posterImage.image = image // UIImage(named: movie.posterPath)
         }
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
-//     
+        //
+        
         
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
