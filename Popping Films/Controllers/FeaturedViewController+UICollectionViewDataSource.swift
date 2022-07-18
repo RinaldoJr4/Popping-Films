@@ -28,43 +28,50 @@ extension FeaturedViewController: UICollectionViewDataSource {
     
     fileprivate func makeNowPlayingCell(_ collectionView: UICollectionView, _ indexPath: IndexPath) -> NowPlayingCollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NowPlayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowPlayingCollectionViewCell {
-            
-            cell.setup(title: nowPlayingMovies[indexPath.item].title,
-                       image: UIImage(), dateLabel: <#T##String#>) // image: UIImage(named: popularMovies[indexPath.row].posterPath) ?? UIImage()
-            
             let movie = popularMovies[indexPath.item]
+            
+            cell.setup(title: movie.title,
+                       image: UIImage(), dateLabel: "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))") // image: UIImage(named: popularMovies[indexPath.row].posterPath) ?? UIImage()
+            
             Task {
-                let imageData = await Movie.downloadImageData(withPath: movie.backdropPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
                 let image = UIImage(data: imageData) ?? UIImage()
-                cell.setup(title: movie.title, image: image)
+                cell.setup(title: movie.title, image: image, dateLabel: "\(movie.releaseDate.prefix(4))")
             }
             return cell
-            
-            cell.setup(title: nowPlayingMovies[indexPath.item].title,
-                       image: UIImage(named: nowPlayingMovies[indexPath.row].posterPath) ?? UIImage(),
-                       dateLabel: "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))")
-            
-            return cell
+//
+//            cell.setup(title: nowPlayingMovies[indexPath.item].title,
+//                       image: UIImage(named: nowPlayingMovies[indexPath.row].posterPath) ?? UIImage(),
+//                       dateLabel: "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))")
+//
+//            return cell
         }
         return NowPlayingCollectionViewCell()
     }
     
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
+
+            let movie = popularMovies[indexPath.item]
             
             // Formatando data pra upcoming
-            
             let dateFormatterGet = DateFormatter()
             dateFormatterGet.dateFormat = "yyyy-MM-dd"
-
 /*          let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "MMM dd"    <- Desnecessário
 */
 
-            cell.setup(title: upcomingMovies[indexPath.row].title, image: UIImage(named: upcomingMovies[indexPath.row].posterPath) ?? UIImage(), dateLabel: dateFormatterGet.date(from: String(upcomingMovies[indexPath.item].releaseDate))?.formatted(.dateTime
+            cell.setup(title: movie.title, image: UIImage(), dateLabel: dateFormatterGet.date(from: String(upcomingMovies[indexPath.item].releaseDate))?.formatted(.dateTime
                 .day(.defaultDigits)
                 .month(.abbreviated)) ?? "error") // <- esse final vai explodir a minha cabeça
             
+            Task {
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let image = UIImage(data: imageData) ?? UIImage()
+                cell.setup(title: movie.title, image: image, dateLabel: dateFormatterGet.date(from: String(movie.releaseDate))?.formatted(.dateTime
+                    .day(.defaultDigits)
+                    .month(.abbreviated)) ?? "error")
+            }
             return cell
         }
         return UpcomingCollectionViewCell()
