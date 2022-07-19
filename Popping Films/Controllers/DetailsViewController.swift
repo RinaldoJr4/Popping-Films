@@ -46,7 +46,7 @@ class DetailsViewController: UIViewController {
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
-        durationLabel.text = movie.d
+//        durationLabel.text = movie.d
         
         //
         
