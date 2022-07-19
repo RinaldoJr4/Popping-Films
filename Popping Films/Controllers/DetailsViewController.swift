@@ -16,6 +16,8 @@ class DetailsViewController: UIViewController {
     @IBOutlet var ratingLabel: UILabel!
     
     @IBOutlet var overviewLabel: UILabel!
+    @IBOutlet var genresLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
     
     var movie: Movie?
     
@@ -44,6 +46,8 @@ class DetailsViewController: UIViewController {
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
+        durationLabel.text = movie.d
+        
         //
         
         
